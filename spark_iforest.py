@@ -1,14 +1,10 @@
-from sklearn.ensemble import IsolationForest
-
 from pyspark import SparkContext
 from pyspark.sql import SparkSession
-from pyspark.sql.types import Row
 from pyspark.ml.feature import MinMaxScaler
 from pyspark.ml.linalg import Vectors
 
 from pyspark_iforest.ml.iforest import *  # https://github.com/titicaca/spark-iforest/tree/master/python
 
-import pandas as pd
 
 if __name__ == "__main__":
     # Data Load
