@@ -52,4 +52,4 @@ if __name__ == "__main__":
 
 
     tmp_data = transformed.rdd.map(lambda x: f(x)).collect()
-scaled_df = spark.createDataFrame(tmp_data, columns + ['anomalyScore', 'prediction']).show()
+    scaled_df = spark.createDataFrame(tmp_data, columns + ['anomalyScore', 'prediction']).show()
